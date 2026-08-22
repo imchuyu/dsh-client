@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline';" />
+<title>DSH Client</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: "Segoe UI", -apple-system, "Microsoft YaHei", sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 22px; user-select: none; overflow: hidden;
+  }
+  .logo {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: linear-gradient(135deg, #1f6feb 0%, #0d1117 100%);
+    border: 2px solid #388bfd; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 26px; letter-spacing: 1px; color: #f0f6fc;
+    box-shadow: 0 6px 24px rgba(31,111,235,.35);
+  }
+  .spinner {
+    width: 34px; height: 34px; border-radius: 50%;
+    border: 3px solid rgba(201,209,217,.2); border-top-color: #388bfd;
+    animation: spin .9s linear infinite;
+  }
+  .title { font-size: 16px; font-weight: 600; color: #f0f6fc; }
+  .hint { font-size: 12.5px; color: #8b949e; letter-spacing: .3px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="logo">DS</div>
+  <div class="spinner"></div>
+  <div class="title">正在启动 DeepSeek Harness 服务…</div>
+  <div class="hint">首次启动可能需要数秒，请稍候</div>
+</body>
+</html>

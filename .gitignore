@@ -1,0 +1,19 @@
+# 依赖目录（含下载的 Electron 二进制 ~225MB，不进仓库）
+# 克隆后请在本目录运行 `npm install` 重建。
+node_modules/
+
+# npm 锁文件可选保留；为减小上传量这里忽略，按 package.json 安装即可
+package-lock.json
+
+# 日志与临时文件
+*.log
+install-electron.log
+test-*.js
+
+# 操作系统杂项
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Electron 运行时生成的用户数据（若曾在本机跑过会残留）
+*.tmp
